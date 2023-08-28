@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title><%= product.name %></title>
+        <link rel="stylesheet" href="/css/style.css" />
+    </head>
+    <body>
+        <div>
+            <img src="<%= product.imgUrl %>" alt="<%= product.id %>" />
+            <p>
+                <strong> Product Id: </strong>
+                <%= product.id %>
+            </p>
+            <p>
+                <strong> Product Name: </strong>
+                <%= product.name %>
+            </p>
+            <p>
+                <strong> Product Price: </strong>
+                $<%= product.price %>
+            </p>
+            <p>
+                <strong>Product Description: </strong>
+                <%= product.description %>
+            </p>
+            <a href="http://localhost:3000/products">Go Back</a>
+        </div>
+    </body>
+</html>
